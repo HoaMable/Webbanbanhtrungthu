@@ -1,0 +1,8 @@
+﻿@model WebBanHangOnline.Models.ExternalLoginListViewModel
+@using Microsoft.Owin.Security
+
+<hr />
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+
+}
